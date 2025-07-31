@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>   
+<body>
+<h1>videos and Audio elements</h1>
+<video src="myvideo.mp4" controls autoplay>
+   Your browser does not support the video tag.
+</video>
+
+<h1>Ensuring Cross-Browser Compatibility</h1>
+<video controls>
+   <source src="myvideo.mp4" type="video/mp4">
+   <source src="myvideo.webm" type="video/webm">
+   <p>Your browser does not support the video tag.</p>
+</video>
+
+<audio controls>
+   <source src="myaudiofile.mp3" type="audio/mp3">
+   <source src="myaudiofile.ogg" type="audio/ogg">
+   <p>Your browser does not support the audio tag.</p>
+</audio>
+
+<h1>responsive videos</h1>
+<video poster="web-dev-picture.jpg" controls>
+  <source src="web-dev-video.mp4" type="video/mp4" media="(max-width: 600px)">
+  <source src="web-dev-video.webm" type="video/webm">
+</video>
+
+</body>
+</html>
